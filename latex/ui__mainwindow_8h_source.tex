@@ -1,0 +1,727 @@
+\doxysection{ui\+\_\+mainwindow.\+h}
+\hypertarget{ui__mainwindow_8h_source}{}\label{ui__mainwindow_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/********************************************************************************}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ Form\ generated\ from\ reading\ UI\ file\ 'mainwindow.ui'}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ Created\ by:\ Qt\ User\ Interface\ Compiler\ version\ 5.15.16}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**}}
+\DoxyCodeLine{00006\ \textcolor{comment}{**\ WARNING!\ All\ changes\ made\ in\ this\ file\ will\ be\ lost\ when\ recompiling\ UI\ file!}}
+\DoxyCodeLine{00007\ \textcolor{comment}{********************************************************************************/}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ UI\_MAINWINDOW\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ UI\_MAINWINDOW\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QtCore/QVariant>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QtWidgets/QApplication>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QtWidgets/QComboBox>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <QtWidgets/QFormLayout>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <QtWidgets/QGridLayout>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <QtWidgets/QGroupBox>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHBoxLayout>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <QtWidgets/QHeaderView>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLabel>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <QtWidgets/QLineEdit>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <QtWidgets/QListWidget>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <QtWidgets/QMainWindow>}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <QtWidgets/QPushButton>}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#include\ <QtWidgets/QStackedWidget>}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\#include\ <QtWidgets/QTableWidget>}}
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#include\ <QtWidgets/QVBoxLayout>}}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#include\ <QtWidgets/QWidget>}}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ QT\_BEGIN\_NAMESPACE}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui___main_window}{Ui\_MainWindow}}}
+\DoxyCodeLine{00033\ \{}
+\DoxyCodeLine{00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ \ \ \ \ QWidget\ *centralwidget;}
+\DoxyCodeLine{00036\ \ \ \ \ QVBoxLayout\ *verticalLayout;}
+\DoxyCodeLine{00037\ \ \ \ \ QStackedWidget\ *stackedWidget;}
+\DoxyCodeLine{00038\ \ \ \ \ QWidget\ *loginPage;}
+\DoxyCodeLine{00039\ \ \ \ \ QVBoxLayout\ *verticalLayout\_Login;}
+\DoxyCodeLine{00040\ \ \ \ \ QLabel\ *logoLabel;}
+\DoxyCodeLine{00041\ \ \ \ \ QLabel\ *loginTitle;}
+\DoxyCodeLine{00042\ \ \ \ \ QLineEdit\ *usernameInput;}
+\DoxyCodeLine{00043\ \ \ \ \ QLineEdit\ *passwordInput;}
+\DoxyCodeLine{00044\ \ \ \ \ QPushButton\ *loginButton;}
+\DoxyCodeLine{00045\ \ \ \ \ QPushButton\ *showRegistrationButton;}
+\DoxyCodeLine{00046\ \ \ \ \ QWidget\ *registrationPage;}
+\DoxyCodeLine{00047\ \ \ \ \ QVBoxLayout\ *verticalLayout\_Register;}
+\DoxyCodeLine{00048\ \ \ \ \ QLabel\ *logoLabel1;}
+\DoxyCodeLine{00049\ \ \ \ \ QLabel\ *registerTitle;}
+\DoxyCodeLine{00050\ \ \ \ \ QLineEdit\ *regUsernameInput;}
+\DoxyCodeLine{00051\ \ \ \ \ QLineEdit\ *regPasswordInput;}
+\DoxyCodeLine{00052\ \ \ \ \ QPushButton\ *registerButton;}
+\DoxyCodeLine{00053\ \ \ \ \ QPushButton\ *showLoginButton;}
+\DoxyCodeLine{00054\ \ \ \ \ QWidget\ *accountPage;}
+\DoxyCodeLine{00055\ \ \ \ \ QVBoxLayout\ *verticalLayout\_Account;}
+\DoxyCodeLine{00056\ \ \ \ \ QLabel\ *label;}
+\DoxyCodeLine{00057\ \ \ \ \ QHBoxLayout\ *hboxlayout;}
+\DoxyCodeLine{00058\ \ \ \ \ QPushButton\ *transferFundsButton;}
+\DoxyCodeLine{00059\ \ \ \ \ QPushButton\ *budgetButton;}
+\DoxyCodeLine{00060\ \ \ \ \ QPushButton\ *viewHistoryButton;}
+\DoxyCodeLine{00061\ \ \ \ \ QGroupBox\ *checkingGroup;}
+\DoxyCodeLine{00062\ \ \ \ \ QGridLayout\ *gridLayout;}
+\DoxyCodeLine{00063\ \ \ \ \ QLabel\ *checkingBalanceText;}
+\DoxyCodeLine{00064\ \ \ \ \ QLabel\ *checkingBalanceLabel;}
+\DoxyCodeLine{00065\ \ \ \ \ QLineEdit\ *checkingAmountInput;}
+\DoxyCodeLine{00066\ \ \ \ \ QPushButton\ *checkingDepositBtn;}
+\DoxyCodeLine{00067\ \ \ \ \ QPushButton\ *checkingWithdrawBtn;}
+\DoxyCodeLine{00068\ \ \ \ \ QGroupBox\ *savingsGroup;}
+\DoxyCodeLine{00069\ \ \ \ \ QGridLayout\ *gridLayout\_2;}
+\DoxyCodeLine{00070\ \ \ \ \ QLabel\ *savingsBalanceText;}
+\DoxyCodeLine{00071\ \ \ \ \ QLabel\ *savingsBalanceLabel;}
+\DoxyCodeLine{00072\ \ \ \ \ QLineEdit\ *savingsAmountInput;}
+\DoxyCodeLine{00073\ \ \ \ \ QPushButton\ *savingsDepositBtn;}
+\DoxyCodeLine{00074\ \ \ \ \ QPushButton\ *savingsWithdrawBtn;}
+\DoxyCodeLine{00075\ \ \ \ \ QPushButton\ *logoutButton;}
+\DoxyCodeLine{00076\ \ \ \ \ QWidget\ *transferPage;}
+\DoxyCodeLine{00077\ \ \ \ \ QVBoxLayout\ *verticalLayout\_2;}
+\DoxyCodeLine{00078\ \ \ \ \ QLabel\ *transferLabel;}
+\DoxyCodeLine{00079\ \ \ \ \ QPushButton\ *pushButton;}
+\DoxyCodeLine{00080\ \ \ \ \ QGroupBox\ *sourceGroup;}
+\DoxyCodeLine{00081\ \ \ \ \ QGridLayout\ *gridLayout\_3;}
+\DoxyCodeLine{00082\ \ \ \ \ QLabel\ *sourceLabel;}
+\DoxyCodeLine{00083\ \ \ \ \ QComboBox\ *sourceDrop;}
+\DoxyCodeLine{00084\ \ \ \ \ QLabel\ *sourceBalanceLabel;}
+\DoxyCodeLine{00085\ \ \ \ \ QGroupBox\ *destGroup;}
+\DoxyCodeLine{00086\ \ \ \ \ QGridLayout\ *gridLayout\_4;}
+\DoxyCodeLine{00087\ \ \ \ \ QComboBox\ *destDrop;}
+\DoxyCodeLine{00088\ \ \ \ \ QLabel\ *destLabel;}
+\DoxyCodeLine{00089\ \ \ \ \ QLabel\ *destBalanceLabel;}
+\DoxyCodeLine{00090\ \ \ \ \ QGroupBox\ *groupBox\_3;}
+\DoxyCodeLine{00091\ \ \ \ \ QHBoxLayout\ *horizontalLayout\_3;}
+\DoxyCodeLine{00092\ \ \ \ \ QLabel\ *amtLabel;}
+\DoxyCodeLine{00093\ \ \ \ \ QLineEdit\ *amtTextBox;}
+\DoxyCodeLine{00094\ \ \ \ \ QPushButton\ *transferButton;}
+\DoxyCodeLine{00095\ \ \ \ \ QWidget\ *budgetPage;}
+\DoxyCodeLine{00096\ \ \ \ \ QVBoxLayout\ *verticalLayout\_Budget;}
+\DoxyCodeLine{00097\ \ \ \ \ QLabel\ *label1;}
+\DoxyCodeLine{00098\ \ \ \ \ QGroupBox\ *groupBox;}
+\DoxyCodeLine{00099\ \ \ \ \ QHBoxLayout\ *hboxLayout;}
+\DoxyCodeLine{00100\ \ \ \ \ QLineEdit\ *incomeInput;}
+\DoxyCodeLine{00101\ \ \ \ \ QPushButton\ *calculateBudget;}
+\DoxyCodeLine{00102\ \ \ \ \ QGroupBox\ *groupBox1;}
+\DoxyCodeLine{00103\ \ \ \ \ QFormLayout\ *formLayout;}
+\DoxyCodeLine{00104\ \ \ \ \ QLabel\ *label2;}
+\DoxyCodeLine{00105\ \ \ \ \ QLabel\ *necessitiesLabel;}
+\DoxyCodeLine{00106\ \ \ \ \ QLabel\ *label3;}
+\DoxyCodeLine{00107\ \ \ \ \ QLabel\ *wantsLabel;}
+\DoxyCodeLine{00108\ \ \ \ \ QLabel\ *label4;}
+\DoxyCodeLine{00109\ \ \ \ \ QLabel\ *savingsLabel;}
+\DoxyCodeLine{00110\ \ \ \ \ QGroupBox\ *groupBox2;}
+\DoxyCodeLine{00111\ \ \ \ \ QVBoxLayout\ *vboxLayout;}
+\DoxyCodeLine{00112\ \ \ \ \ QListWidget\ *customCategoriesList;}
+\DoxyCodeLine{00113\ \ \ \ \ QHBoxLayout\ *hboxLayout1;}
+\DoxyCodeLine{00114\ \ \ \ \ QLineEdit\ *customCategoryInput;}
+\DoxyCodeLine{00115\ \ \ \ \ QLineEdit\ *customAmountInput;}
+\DoxyCodeLine{00116\ \ \ \ \ QPushButton\ *addCustomCategory;}
+\DoxyCodeLine{00117\ \ \ \ \ QPushButton\ *saveBudget;}
+\DoxyCodeLine{00118\ \ \ \ \ QPushButton\ *backToAccountButton;}
+\DoxyCodeLine{00119\ \ \ \ \ QWidget\ *transactionHistoryPage;}
+\DoxyCodeLine{00120\ \ \ \ \ QVBoxLayout\ *verticalLayout\_TransactionHistory;}
+\DoxyCodeLine{00121\ \ \ \ \ QLabel\ *transactionHistoryLabel;}
+\DoxyCodeLine{00122\ \ \ \ \ QTableWidget\ *transactionTable;}
+\DoxyCodeLine{00123\ \ \ \ \ QPushButton\ *backToAccountBtn;}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordtype}{void}\ setupUi(QMainWindow\ *MainWindow)}
+\DoxyCodeLine{00126\ \ \ \ \ \{}
+\DoxyCodeLine{00127\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (MainWindow-\/>objectName().isEmpty())}
+\DoxyCodeLine{00128\ \ \ \ \ \ \ \ \ \ \ \ \ MainWindow-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}MainWindow"{}}));}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ MainWindow-\/>resize(790,\ 600);}
+\DoxyCodeLine{00130\ \ \ \ \ \ \ \ \ centralwidget\ =\ \textcolor{keyword}{new}\ QWidget(MainWindow);}
+\DoxyCodeLine{00131\ \ \ \ \ \ \ \ \ centralwidget-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}centralwidget"{}}));}
+\DoxyCodeLine{00132\ \ \ \ \ \ \ \ \ verticalLayout\ =\ \textcolor{keyword}{new}\ QVBoxLayout(centralwidget);}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ verticalLayout-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}verticalLayout"{}}));}
+\DoxyCodeLine{00134\ \ \ \ \ \ \ \ \ stackedWidget\ =\ \textcolor{keyword}{new}\ QStackedWidget(centralwidget);}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ stackedWidget-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}stackedWidget"{}}));}
+\DoxyCodeLine{00136\ \ \ \ \ \ \ \ \ loginPage\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ loginPage-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}loginPage"{}}));}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ verticalLayout\_Login\ =\ \textcolor{keyword}{new}\ QVBoxLayout(loginPage);}
+\DoxyCodeLine{00139\ \ \ \ \ \ \ \ \ verticalLayout\_Login-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}verticalLayout\_Login"{}}));}
+\DoxyCodeLine{00140\ \ \ \ \ \ \ \ \ logoLabel\ =\ \textcolor{keyword}{new}\ QLabel(loginPage);}
+\DoxyCodeLine{00141\ \ \ \ \ \ \ \ \ logoLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}logoLabel"{}}));}
+\DoxyCodeLine{00142\ \ \ \ \ \ \ \ \ logoLabel-\/>setMinimumSize(QSize(150,\ 150));}
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ logoLabel-\/>setMaximumSize(QSize(150,\ 150));}
+\DoxyCodeLine{00144\ \ \ \ \ \ \ \ \ logoLabel-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}margin-\/bottom:\ 15px;"{}}));}
+\DoxyCodeLine{00145\ \ \ \ \ \ \ \ \ logoLabel-\/>setPixmap(QPixmap(QString::fromUtf8(\textcolor{stringliteral}{"{}:/images/bank\_logo.png"{}})));}
+\DoxyCodeLine{00146\ \ \ \ \ \ \ \ \ logoLabel-\/>setScaledContents(\textcolor{keyword}{true});}
+\DoxyCodeLine{00147\ \ \ \ \ \ \ \ \ logoLabel-\/>setAlignment(Qt::AlignCenter);}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \ \ \ \ \ \ \ \ verticalLayout\_Login-\/>addWidget(logoLabel);}
+\DoxyCodeLine{00150\ }
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ loginTitle\ =\ \textcolor{keyword}{new}\ QLabel(loginPage);}
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ loginTitle-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}loginTitle"{}}));}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ loginTitle-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}font-\/size:\ 20px;\ font-\/weight:\ bold;\ color:\ \#82878c;\ margin-\/bottom:\ 20px;"{}}));}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ loginTitle-\/>setAlignment(Qt::AlignCenter);}
+\DoxyCodeLine{00155\ }
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ verticalLayout\_Login-\/>addWidget(loginTitle);}
+\DoxyCodeLine{00157\ }
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ usernameInput\ =\ \textcolor{keyword}{new}\ QLineEdit(loginPage);}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ usernameInput-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}usernameInput"{}}));}
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ usernameInput-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}padding:\ 8px;\ border:\ 1px\ solid\ \#bdc3c7;\ border-\/radius:\ 4px;"{}}));}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ verticalLayout\_Login-\/>addWidget(usernameInput);}
+\DoxyCodeLine{00163\ }
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ passwordInput\ =\ \textcolor{keyword}{new}\ QLineEdit(loginPage);}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ passwordInput-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}passwordInput"{}}));}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ passwordInput-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}padding:\ 8px;\ border:\ 1px\ solid\ \#bdc3c7;\ border-\/radius:\ 4px;"{}}));}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ passwordInput-\/>setEchoMode(QLineEdit::Password);}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ verticalLayout\_Login-\/>addWidget(passwordInput);}
+\DoxyCodeLine{00170\ }
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ loginButton\ =\ \textcolor{keyword}{new}\ QPushButton(loginPage);}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ loginButton-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}loginButton"{}}));}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ loginButton-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00174\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00175\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ background-\/color:\ \#3498db;\(\backslash\)n"{}}}
+\DoxyCodeLine{00176\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00177\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ border:\ none;\(\backslash\)n"{}}}
+\DoxyCodeLine{00178\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00179\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ border-\/radius:\ 4px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00180\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00181\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00182\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00183\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ background-\/color:\ \#2980b9;\(\backslash\)n"{}}}
+\DoxyCodeLine{00184\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00185\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ "{}}));}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00187\ \ \ \ \ \ \ \ \ verticalLayout\_Login-\/>addWidget(loginButton);}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ \ \ \ \ \ \ \ \ showRegistrationButton\ =\ \textcolor{keyword}{new}\ QPushButton(loginPage);}
+\DoxyCodeLine{00190\ \ \ \ \ \ \ \ \ showRegistrationButton-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}showRegistrationButton"{}}));}
+\DoxyCodeLine{00191\ \ \ \ \ \ \ \ \ showRegistrationButton-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00192\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00193\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ background-\/color:\ \#2ecc71;\(\backslash\)n"{}}}
+\DoxyCodeLine{00194\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00195\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ border:\ none;\(\backslash\)n"{}}}
+\DoxyCodeLine{00196\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00197\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ border-\/radius:\ 4px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00198\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00199\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00200\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00201\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ background-\/color:\ \#27ae60;\(\backslash\)n"{}}}
+\DoxyCodeLine{00202\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00203\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ "{}}));}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00205\ \ \ \ \ \ \ \ \ verticalLayout\_Login-\/>addWidget(showRegistrationButton);}
+\DoxyCodeLine{00206\ }
+\DoxyCodeLine{00207\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(loginPage);}
+\DoxyCodeLine{00208\ \ \ \ \ \ \ \ \ registrationPage\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00209\ \ \ \ \ \ \ \ \ registrationPage-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}registrationPage"{}}));}
+\DoxyCodeLine{00210\ \ \ \ \ \ \ \ \ verticalLayout\_Register\ =\ \textcolor{keyword}{new}\ QVBoxLayout(registrationPage);}
+\DoxyCodeLine{00211\ \ \ \ \ \ \ \ \ verticalLayout\_Register-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}verticalLayout\_Register"{}}));}
+\DoxyCodeLine{00212\ \ \ \ \ \ \ \ \ logoLabel1\ =\ \textcolor{keyword}{new}\ QLabel(registrationPage);}
+\DoxyCodeLine{00213\ \ \ \ \ \ \ \ \ logoLabel1-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}logoLabel1"{}}));}
+\DoxyCodeLine{00214\ \ \ \ \ \ \ \ \ logoLabel1-\/>setMinimumSize(QSize(150,\ 150));}
+\DoxyCodeLine{00215\ \ \ \ \ \ \ \ \ logoLabel1-\/>setMaximumSize(QSize(150,\ 150));}
+\DoxyCodeLine{00216\ \ \ \ \ \ \ \ \ logoLabel1-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}margin-\/bottom:\ 15px;"{}}));}
+\DoxyCodeLine{00217\ \ \ \ \ \ \ \ \ logoLabel1-\/>setPixmap(QPixmap(QString::fromUtf8(\textcolor{stringliteral}{"{}:/images/bank\_logo.png"{}})));}
+\DoxyCodeLine{00218\ \ \ \ \ \ \ \ \ logoLabel1-\/>setScaledContents(\textcolor{keyword}{true});}
+\DoxyCodeLine{00219\ \ \ \ \ \ \ \ \ logoLabel1-\/>setAlignment(Qt::AlignCenter);}
+\DoxyCodeLine{00220\ }
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ verticalLayout\_Register-\/>addWidget(logoLabel1);}
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \ \ \ \ \ \ \ \ registerTitle\ =\ \textcolor{keyword}{new}\ QLabel(registrationPage);}
+\DoxyCodeLine{00224\ \ \ \ \ \ \ \ \ registerTitle-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}registerTitle"{}}));}
+\DoxyCodeLine{00225\ \ \ \ \ \ \ \ \ registerTitle-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}font-\/size:\ 20px;\ font-\/weight:\ bold;\ color:\ \#82878c;\ margin-\/bottom:\ 20px;"{}}));}
+\DoxyCodeLine{00226\ \ \ \ \ \ \ \ \ registerTitle-\/>setAlignment(Qt::AlignCenter);}
+\DoxyCodeLine{00227\ }
+\DoxyCodeLine{00228\ \ \ \ \ \ \ \ \ verticalLayout\_Register-\/>addWidget(registerTitle);}
+\DoxyCodeLine{00229\ }
+\DoxyCodeLine{00230\ \ \ \ \ \ \ \ \ regUsernameInput\ =\ \textcolor{keyword}{new}\ QLineEdit(registrationPage);}
+\DoxyCodeLine{00231\ \ \ \ \ \ \ \ \ regUsernameInput-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}regUsernameInput"{}}));}
+\DoxyCodeLine{00232\ \ \ \ \ \ \ \ \ regUsernameInput-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}padding:\ 8px;\ border:\ 1px\ solid\ \#bdc3c7;\ border-\/radius:\ 4px;"{}}));}
+\DoxyCodeLine{00233\ }
+\DoxyCodeLine{00234\ \ \ \ \ \ \ \ \ verticalLayout\_Register-\/>addWidget(regUsernameInput);}
+\DoxyCodeLine{00235\ }
+\DoxyCodeLine{00236\ \ \ \ \ \ \ \ \ regPasswordInput\ =\ \textcolor{keyword}{new}\ QLineEdit(registrationPage);}
+\DoxyCodeLine{00237\ \ \ \ \ \ \ \ \ regPasswordInput-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}regPasswordInput"{}}));}
+\DoxyCodeLine{00238\ \ \ \ \ \ \ \ \ regPasswordInput-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}padding:\ 8px;\ border:\ 1px\ solid\ \#bdc3c7;\ border-\/radius:\ 4px;"{}}));}
+\DoxyCodeLine{00239\ \ \ \ \ \ \ \ \ regPasswordInput-\/>setEchoMode(QLineEdit::Password);}
+\DoxyCodeLine{00240\ }
+\DoxyCodeLine{00241\ \ \ \ \ \ \ \ \ verticalLayout\_Register-\/>addWidget(regPasswordInput);}
+\DoxyCodeLine{00242\ }
+\DoxyCodeLine{00243\ \ \ \ \ \ \ \ \ registerButton\ =\ \textcolor{keyword}{new}\ QPushButton(registrationPage);}
+\DoxyCodeLine{00244\ \ \ \ \ \ \ \ \ registerButton-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}registerButton"{}}));}
+\DoxyCodeLine{00245\ \ \ \ \ \ \ \ \ registerButton-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00246\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00247\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ background-\/color:\ \#2ecc71;\(\backslash\)n"{}}}
+\DoxyCodeLine{00248\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00249\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ border:\ none;\(\backslash\)n"{}}}
+\DoxyCodeLine{00250\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00251\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ border-\/radius:\ 4px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00252\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00253\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00254\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00255\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ background-\/color:\ \#27ae60;\(\backslash\)n"{}}}
+\DoxyCodeLine{00256\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00257\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ "{}}));}
+\DoxyCodeLine{00258\ }
+\DoxyCodeLine{00259\ \ \ \ \ \ \ \ \ verticalLayout\_Register-\/>addWidget(registerButton);}
+\DoxyCodeLine{00260\ }
+\DoxyCodeLine{00261\ \ \ \ \ \ \ \ \ showLoginButton\ =\ \textcolor{keyword}{new}\ QPushButton(registrationPage);}
+\DoxyCodeLine{00262\ \ \ \ \ \ \ \ \ showLoginButton-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}showLoginButton"{}}));}
+\DoxyCodeLine{00263\ \ \ \ \ \ \ \ \ showLoginButton-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}\(\backslash\)n"{}}}
+\DoxyCodeLine{00264\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ QPushButton\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00265\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ background-\/color:\ \#e74c3c;\(\backslash\)n"{}}}
+\DoxyCodeLine{00266\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ color:\ white;\(\backslash\)n"{}}}
+\DoxyCodeLine{00267\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ border:\ none;\(\backslash\)n"{}}}
+\DoxyCodeLine{00268\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ padding:\ 10px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00269\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ border-\/radius:\ 4px;\(\backslash\)n"{}}}
+\DoxyCodeLine{00270\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ font-\/weight:\ bold;\(\backslash\)n"{}}}
+\DoxyCodeLine{00271\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00272\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ QPushButton:hover\ \{\(\backslash\)n"{}}}
+\DoxyCodeLine{00273\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \ \ background-\/color:\ \#c0392b;\(\backslash\)n"{}}}
+\DoxyCodeLine{00274\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ \ \}\(\backslash\)n"{}}}
+\DoxyCodeLine{00275\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ \ \ \ "{}}));}
+\DoxyCodeLine{00276\ }
+\DoxyCodeLine{00277\ \ \ \ \ \ \ \ \ verticalLayout\_Register-\/>addWidget(showLoginButton);}
+\DoxyCodeLine{00278\ }
+\DoxyCodeLine{00279\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(registrationPage);}
+\DoxyCodeLine{00280\ \ \ \ \ \ \ \ \ accountPage\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00281\ \ \ \ \ \ \ \ \ accountPage-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}accountPage"{}}));}
+\DoxyCodeLine{00282\ \ \ \ \ \ \ \ \ verticalLayout\_Account\ =\ \textcolor{keyword}{new}\ QVBoxLayout(accountPage);}
+\DoxyCodeLine{00283\ \ \ \ \ \ \ \ \ verticalLayout\_Account-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}verticalLayout\_Account"{}}));}
+\DoxyCodeLine{00284\ \ \ \ \ \ \ \ \ label\ =\ \textcolor{keyword}{new}\ QLabel(accountPage);}
+\DoxyCodeLine{00285\ \ \ \ \ \ \ \ \ label-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}label"{}}));}
+\DoxyCodeLine{00286\ \ \ \ \ \ \ \ \ label-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}font-\/size:\ 18pt;\ font-\/weight:\ bold;"{}}));}
+\DoxyCodeLine{00287\ \ \ \ \ \ \ \ \ label-\/>setAlignment(Qt::AlignCenter);}
+\DoxyCodeLine{00288\ }
+\DoxyCodeLine{00289\ \ \ \ \ \ \ \ \ verticalLayout\_Account-\/>addWidget(label);}
+\DoxyCodeLine{00290\ }
+\DoxyCodeLine{00291\ \ \ \ \ \ \ \ \ hboxlayout\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00292\ \ \ \ \ \ \ \ \ hboxlayout-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}hboxlayout"{}}));}
+\DoxyCodeLine{00293\ \ \ \ \ \ \ \ \ transferFundsButton\ =\ \textcolor{keyword}{new}\ QPushButton(accountPage);}
+\DoxyCodeLine{00294\ \ \ \ \ \ \ \ \ transferFundsButton-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}transferFundsButton"{}}));}
+\DoxyCodeLine{00295\ \ \ \ \ \ \ \ \ transferFundsButton-\/>setMinimumSize(QSize(100,\ 30));}
+\DoxyCodeLine{00296\ \ \ \ \ \ \ \ \ transferFundsButton-\/>setMaximumSize(QSize(100,\ 30));}
+\DoxyCodeLine{00297\ }
+\DoxyCodeLine{00298\ \ \ \ \ \ \ \ \ hboxlayout-\/>addWidget(transferFundsButton);}
+\DoxyCodeLine{00299\ }
+\DoxyCodeLine{00300\ \ \ \ \ \ \ \ \ budgetButton\ =\ \textcolor{keyword}{new}\ QPushButton(accountPage);}
+\DoxyCodeLine{00301\ \ \ \ \ \ \ \ \ budgetButton-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}budgetButton"{}}));}
+\DoxyCodeLine{00302\ \ \ \ \ \ \ \ \ budgetButton-\/>setMinimumSize(QSize(100,\ 30));}
+\DoxyCodeLine{00303\ \ \ \ \ \ \ \ \ budgetButton-\/>setMaximumSize(QSize(100,\ 30));}
+\DoxyCodeLine{00304\ }
+\DoxyCodeLine{00305\ \ \ \ \ \ \ \ \ hboxlayout-\/>addWidget(budgetButton);}
+\DoxyCodeLine{00306\ }
+\DoxyCodeLine{00307\ \ \ \ \ \ \ \ \ viewHistoryButton\ =\ \textcolor{keyword}{new}\ QPushButton(accountPage);}
+\DoxyCodeLine{00308\ \ \ \ \ \ \ \ \ viewHistoryButton-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}viewHistoryButton"{}}));}
+\DoxyCodeLine{00309\ \ \ \ \ \ \ \ \ viewHistoryButton-\/>setMinimumSize(QSize(100,\ 30));}
+\DoxyCodeLine{00310\ \ \ \ \ \ \ \ \ viewHistoryButton-\/>setMaximumSize(QSize(100,\ 30));}
+\DoxyCodeLine{00311\ }
+\DoxyCodeLine{00312\ \ \ \ \ \ \ \ \ hboxlayout-\/>addWidget(viewHistoryButton);}
+\DoxyCodeLine{00313\ }
+\DoxyCodeLine{00314\ }
+\DoxyCodeLine{00315\ \ \ \ \ \ \ \ \ verticalLayout\_Account-\/>addLayout(hboxlayout);}
+\DoxyCodeLine{00316\ }
+\DoxyCodeLine{00317\ \ \ \ \ \ \ \ \ checkingGroup\ =\ \textcolor{keyword}{new}\ QGroupBox(accountPage);}
+\DoxyCodeLine{00318\ \ \ \ \ \ \ \ \ checkingGroup-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}checkingGroup"{}}));}
+\DoxyCodeLine{00319\ \ \ \ \ \ \ \ \ gridLayout\ =\ \textcolor{keyword}{new}\ QGridLayout(checkingGroup);}
+\DoxyCodeLine{00320\ \ \ \ \ \ \ \ \ gridLayout-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}gridLayout"{}}));}
+\DoxyCodeLine{00321\ \ \ \ \ \ \ \ \ checkingBalanceText\ =\ \textcolor{keyword}{new}\ QLabel(checkingGroup);}
+\DoxyCodeLine{00322\ \ \ \ \ \ \ \ \ checkingBalanceText-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}checkingBalanceText"{}}));}
+\DoxyCodeLine{00323\ }
+\DoxyCodeLine{00324\ \ \ \ \ \ \ \ \ gridLayout-\/>addWidget(checkingBalanceText,\ 0,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00325\ }
+\DoxyCodeLine{00326\ \ \ \ \ \ \ \ \ checkingBalanceLabel\ =\ \textcolor{keyword}{new}\ QLabel(checkingGroup);}
+\DoxyCodeLine{00327\ \ \ \ \ \ \ \ \ checkingBalanceLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}checkingBalanceLabel"{}}));}
+\DoxyCodeLine{00328\ }
+\DoxyCodeLine{00329\ \ \ \ \ \ \ \ \ gridLayout-\/>addWidget(checkingBalanceLabel,\ 0,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00330\ }
+\DoxyCodeLine{00331\ \ \ \ \ \ \ \ \ checkingAmountInput\ =\ \textcolor{keyword}{new}\ QLineEdit(checkingGroup);}
+\DoxyCodeLine{00332\ \ \ \ \ \ \ \ \ checkingAmountInput-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}checkingAmountInput"{}}));}
+\DoxyCodeLine{00333\ }
+\DoxyCodeLine{00334\ \ \ \ \ \ \ \ \ gridLayout-\/>addWidget(checkingAmountInput,\ 1,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00335\ }
+\DoxyCodeLine{00336\ \ \ \ \ \ \ \ \ checkingDepositBtn\ =\ \textcolor{keyword}{new}\ QPushButton(checkingGroup);}
+\DoxyCodeLine{00337\ \ \ \ \ \ \ \ \ checkingDepositBtn-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}checkingDepositBtn"{}}));}
+\DoxyCodeLine{00338\ }
+\DoxyCodeLine{00339\ \ \ \ \ \ \ \ \ gridLayout-\/>addWidget(checkingDepositBtn,\ 2,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00340\ }
+\DoxyCodeLine{00341\ \ \ \ \ \ \ \ \ checkingWithdrawBtn\ =\ \textcolor{keyword}{new}\ QPushButton(checkingGroup);}
+\DoxyCodeLine{00342\ \ \ \ \ \ \ \ \ checkingWithdrawBtn-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}checkingWithdrawBtn"{}}));}
+\DoxyCodeLine{00343\ }
+\DoxyCodeLine{00344\ \ \ \ \ \ \ \ \ gridLayout-\/>addWidget(checkingWithdrawBtn,\ 2,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00345\ }
+\DoxyCodeLine{00346\ }
+\DoxyCodeLine{00347\ \ \ \ \ \ \ \ \ verticalLayout\_Account-\/>addWidget(checkingGroup);}
+\DoxyCodeLine{00348\ }
+\DoxyCodeLine{00349\ \ \ \ \ \ \ \ \ savingsGroup\ =\ \textcolor{keyword}{new}\ QGroupBox(accountPage);}
+\DoxyCodeLine{00350\ \ \ \ \ \ \ \ \ savingsGroup-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}savingsGroup"{}}));}
+\DoxyCodeLine{00351\ \ \ \ \ \ \ \ \ gridLayout\_2\ =\ \textcolor{keyword}{new}\ QGridLayout(savingsGroup);}
+\DoxyCodeLine{00352\ \ \ \ \ \ \ \ \ gridLayout\_2-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}gridLayout\_2"{}}));}
+\DoxyCodeLine{00353\ \ \ \ \ \ \ \ \ savingsBalanceText\ =\ \textcolor{keyword}{new}\ QLabel(savingsGroup);}
+\DoxyCodeLine{00354\ \ \ \ \ \ \ \ \ savingsBalanceText-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}savingsBalanceText"{}}));}
+\DoxyCodeLine{00355\ }
+\DoxyCodeLine{00356\ \ \ \ \ \ \ \ \ gridLayout\_2-\/>addWidget(savingsBalanceText,\ 0,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00357\ }
+\DoxyCodeLine{00358\ \ \ \ \ \ \ \ \ savingsBalanceLabel\ =\ \textcolor{keyword}{new}\ QLabel(savingsGroup);}
+\DoxyCodeLine{00359\ \ \ \ \ \ \ \ \ savingsBalanceLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}savingsBalanceLabel"{}}));}
+\DoxyCodeLine{00360\ }
+\DoxyCodeLine{00361\ \ \ \ \ \ \ \ \ gridLayout\_2-\/>addWidget(savingsBalanceLabel,\ 0,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00362\ }
+\DoxyCodeLine{00363\ \ \ \ \ \ \ \ \ savingsAmountInput\ =\ \textcolor{keyword}{new}\ QLineEdit(savingsGroup);}
+\DoxyCodeLine{00364\ \ \ \ \ \ \ \ \ savingsAmountInput-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}savingsAmountInput"{}}));}
+\DoxyCodeLine{00365\ }
+\DoxyCodeLine{00366\ \ \ \ \ \ \ \ \ gridLayout\_2-\/>addWidget(savingsAmountInput,\ 1,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00367\ }
+\DoxyCodeLine{00368\ \ \ \ \ \ \ \ \ savingsDepositBtn\ =\ \textcolor{keyword}{new}\ QPushButton(savingsGroup);}
+\DoxyCodeLine{00369\ \ \ \ \ \ \ \ \ savingsDepositBtn-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}savingsDepositBtn"{}}));}
+\DoxyCodeLine{00370\ }
+\DoxyCodeLine{00371\ \ \ \ \ \ \ \ \ gridLayout\_2-\/>addWidget(savingsDepositBtn,\ 2,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00372\ }
+\DoxyCodeLine{00373\ \ \ \ \ \ \ \ \ savingsWithdrawBtn\ =\ \textcolor{keyword}{new}\ QPushButton(savingsGroup);}
+\DoxyCodeLine{00374\ \ \ \ \ \ \ \ \ savingsWithdrawBtn-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}savingsWithdrawBtn"{}}));}
+\DoxyCodeLine{00375\ }
+\DoxyCodeLine{00376\ \ \ \ \ \ \ \ \ gridLayout\_2-\/>addWidget(savingsWithdrawBtn,\ 2,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00377\ }
+\DoxyCodeLine{00378\ }
+\DoxyCodeLine{00379\ \ \ \ \ \ \ \ \ verticalLayout\_Account-\/>addWidget(savingsGroup);}
+\DoxyCodeLine{00380\ }
+\DoxyCodeLine{00381\ \ \ \ \ \ \ \ \ logoutButton\ =\ \textcolor{keyword}{new}\ QPushButton(accountPage);}
+\DoxyCodeLine{00382\ \ \ \ \ \ \ \ \ logoutButton-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}logoutButton"{}}));}
+\DoxyCodeLine{00383\ }
+\DoxyCodeLine{00384\ \ \ \ \ \ \ \ \ verticalLayout\_Account-\/>addWidget(logoutButton);}
+\DoxyCodeLine{00385\ }
+\DoxyCodeLine{00386\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(accountPage);}
+\DoxyCodeLine{00387\ \ \ \ \ \ \ \ \ transferPage\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00388\ \ \ \ \ \ \ \ \ transferPage-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}transferPage"{}}));}
+\DoxyCodeLine{00389\ \ \ \ \ \ \ \ \ verticalLayout\_2\ =\ \textcolor{keyword}{new}\ QVBoxLayout(transferPage);}
+\DoxyCodeLine{00390\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}verticalLayout\_2"{}}));}
+\DoxyCodeLine{00391\ \ \ \ \ \ \ \ \ transferLabel\ =\ \textcolor{keyword}{new}\ QLabel(transferPage);}
+\DoxyCodeLine{00392\ \ \ \ \ \ \ \ \ transferLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}transferLabel"{}}));}
+\DoxyCodeLine{00393\ \ \ \ \ \ \ \ \ QFont\ font;}
+\DoxyCodeLine{00394\ \ \ \ \ \ \ \ \ font.setPointSize(18);}
+\DoxyCodeLine{00395\ \ \ \ \ \ \ \ \ font.setBold(\textcolor{keyword}{true});}
+\DoxyCodeLine{00396\ \ \ \ \ \ \ \ \ transferLabel-\/>setFont(font);}
+\DoxyCodeLine{00397\ }
+\DoxyCodeLine{00398\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addWidget(transferLabel,\ 0,\ Qt::AlignHCenter);}
+\DoxyCodeLine{00399\ }
+\DoxyCodeLine{00400\ \ \ \ \ \ \ \ \ pushButton\ =\ \textcolor{keyword}{new}\ QPushButton(transferPage);}
+\DoxyCodeLine{00401\ \ \ \ \ \ \ \ \ pushButton-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}pushButton"{}}));}
+\DoxyCodeLine{00402\ \ \ \ \ \ \ \ \ pushButton-\/>setMaximumSize(QSize(100,\ 30));}
+\DoxyCodeLine{00403\ }
+\DoxyCodeLine{00404\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addWidget(pushButton,\ 0,\ Qt::AlignRight);}
+\DoxyCodeLine{00405\ }
+\DoxyCodeLine{00406\ \ \ \ \ \ \ \ \ sourceGroup\ =\ \textcolor{keyword}{new}\ QGroupBox(transferPage);}
+\DoxyCodeLine{00407\ \ \ \ \ \ \ \ \ sourceGroup-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}sourceGroup"{}}));}
+\DoxyCodeLine{00408\ \ \ \ \ \ \ \ \ gridLayout\_3\ =\ \textcolor{keyword}{new}\ QGridLayout(sourceGroup);}
+\DoxyCodeLine{00409\ \ \ \ \ \ \ \ \ gridLayout\_3-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}gridLayout\_3"{}}));}
+\DoxyCodeLine{00410\ \ \ \ \ \ \ \ \ sourceLabel\ =\ \textcolor{keyword}{new}\ QLabel(sourceGroup);}
+\DoxyCodeLine{00411\ \ \ \ \ \ \ \ \ sourceLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}sourceLabel"{}}));}
+\DoxyCodeLine{00412\ \ \ \ \ \ \ \ \ sourceLabel-\/>setMaximumSize(QSize(200,\ 16777215));}
+\DoxyCodeLine{00413\ }
+\DoxyCodeLine{00414\ \ \ \ \ \ \ \ \ gridLayout\_3-\/>addWidget(sourceLabel,\ 0,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00415\ }
+\DoxyCodeLine{00416\ \ \ \ \ \ \ \ \ sourceDrop\ =\ \textcolor{keyword}{new}\ QComboBox(sourceGroup);}
+\DoxyCodeLine{00417\ \ \ \ \ \ \ \ \ sourceDrop-\/>addItem(QString());}
+\DoxyCodeLine{00418\ \ \ \ \ \ \ \ \ sourceDrop-\/>addItem(QString());}
+\DoxyCodeLine{00419\ \ \ \ \ \ \ \ \ sourceDrop-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}sourceDrop"{}}));}
+\DoxyCodeLine{00420\ \ \ \ \ \ \ \ \ sourceDrop-\/>setMinimumSize(QSize(100,\ 30));}
+\DoxyCodeLine{00421\ \ \ \ \ \ \ \ \ sourceDrop-\/>setMaximumSize(QSize(100,\ 30));}
+\DoxyCodeLine{00422\ }
+\DoxyCodeLine{00423\ \ \ \ \ \ \ \ \ gridLayout\_3-\/>addWidget(sourceDrop,\ 0,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00424\ }
+\DoxyCodeLine{00425\ \ \ \ \ \ \ \ \ sourceBalanceLabel\ =\ \textcolor{keyword}{new}\ QLabel(sourceGroup);}
+\DoxyCodeLine{00426\ \ \ \ \ \ \ \ \ sourceBalanceLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}sourceBalanceLabel"{}}));}
+\DoxyCodeLine{00427\ }
+\DoxyCodeLine{00428\ \ \ \ \ \ \ \ \ gridLayout\_3-\/>addWidget(sourceBalanceLabel,\ 1,\ 0,\ 1,\ 2);}
+\DoxyCodeLine{00429\ }
+\DoxyCodeLine{00430\ }
+\DoxyCodeLine{00431\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addWidget(sourceGroup);}
+\DoxyCodeLine{00432\ }
+\DoxyCodeLine{00433\ \ \ \ \ \ \ \ \ destGroup\ =\ \textcolor{keyword}{new}\ QGroupBox(transferPage);}
+\DoxyCodeLine{00434\ \ \ \ \ \ \ \ \ destGroup-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}destGroup"{}}));}
+\DoxyCodeLine{00435\ \ \ \ \ \ \ \ \ gridLayout\_4\ =\ \textcolor{keyword}{new}\ QGridLayout(destGroup);}
+\DoxyCodeLine{00436\ \ \ \ \ \ \ \ \ gridLayout\_4-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}gridLayout\_4"{}}));}
+\DoxyCodeLine{00437\ \ \ \ \ \ \ \ \ destDrop\ =\ \textcolor{keyword}{new}\ QComboBox(destGroup);}
+\DoxyCodeLine{00438\ \ \ \ \ \ \ \ \ destDrop-\/>addItem(QString());}
+\DoxyCodeLine{00439\ \ \ \ \ \ \ \ \ destDrop-\/>addItem(QString());}
+\DoxyCodeLine{00440\ \ \ \ \ \ \ \ \ destDrop-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}destDrop"{}}));}
+\DoxyCodeLine{00441\ \ \ \ \ \ \ \ \ destDrop-\/>setMaximumSize(QSize(100,\ 30));}
+\DoxyCodeLine{00442\ }
+\DoxyCodeLine{00443\ \ \ \ \ \ \ \ \ gridLayout\_4-\/>addWidget(destDrop,\ 0,\ 1,\ 1,\ 1);}
+\DoxyCodeLine{00444\ }
+\DoxyCodeLine{00445\ \ \ \ \ \ \ \ \ destLabel\ =\ \textcolor{keyword}{new}\ QLabel(destGroup);}
+\DoxyCodeLine{00446\ \ \ \ \ \ \ \ \ destLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}destLabel"{}}));}
+\DoxyCodeLine{00447\ \ \ \ \ \ \ \ \ destLabel-\/>setMaximumSize(QSize(200,\ 16777215));}
+\DoxyCodeLine{00448\ }
+\DoxyCodeLine{00449\ \ \ \ \ \ \ \ \ gridLayout\_4-\/>addWidget(destLabel,\ 0,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00450\ }
+\DoxyCodeLine{00451\ \ \ \ \ \ \ \ \ destBalanceLabel\ =\ \textcolor{keyword}{new}\ QLabel(destGroup);}
+\DoxyCodeLine{00452\ \ \ \ \ \ \ \ \ destBalanceLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}destBalanceLabel"{}}));}
+\DoxyCodeLine{00453\ }
+\DoxyCodeLine{00454\ \ \ \ \ \ \ \ \ gridLayout\_4-\/>addWidget(destBalanceLabel,\ 1,\ 0,\ 1,\ 1);}
+\DoxyCodeLine{00455\ }
+\DoxyCodeLine{00456\ }
+\DoxyCodeLine{00457\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addWidget(destGroup);}
+\DoxyCodeLine{00458\ }
+\DoxyCodeLine{00459\ \ \ \ \ \ \ \ \ groupBox\_3\ =\ \textcolor{keyword}{new}\ QGroupBox(transferPage);}
+\DoxyCodeLine{00460\ \ \ \ \ \ \ \ \ groupBox\_3-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}groupBox\_3"{}}));}
+\DoxyCodeLine{00461\ \ \ \ \ \ \ \ \ horizontalLayout\_3\ =\ \textcolor{keyword}{new}\ QHBoxLayout(groupBox\_3);}
+\DoxyCodeLine{00462\ \ \ \ \ \ \ \ \ horizontalLayout\_3-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}horizontalLayout\_3"{}}));}
+\DoxyCodeLine{00463\ \ \ \ \ \ \ \ \ amtLabel\ =\ \textcolor{keyword}{new}\ QLabel(groupBox\_3);}
+\DoxyCodeLine{00464\ \ \ \ \ \ \ \ \ amtLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}amtLabel"{}}));}
+\DoxyCodeLine{00465\ \ \ \ \ \ \ \ \ amtLabel-\/>setMaximumSize(QSize(200,\ 16777215));}
+\DoxyCodeLine{00466\ }
+\DoxyCodeLine{00467\ \ \ \ \ \ \ \ \ horizontalLayout\_3-\/>addWidget(amtLabel);}
+\DoxyCodeLine{00468\ }
+\DoxyCodeLine{00469\ \ \ \ \ \ \ \ \ amtTextBox\ =\ \textcolor{keyword}{new}\ QLineEdit(groupBox\_3);}
+\DoxyCodeLine{00470\ \ \ \ \ \ \ \ \ amtTextBox-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}amtTextBox"{}}));}
+\DoxyCodeLine{00471\ \ \ \ \ \ \ \ \ amtTextBox-\/>setMaximumSize(QSize(100,\ 30));}
+\DoxyCodeLine{00472\ }
+\DoxyCodeLine{00473\ \ \ \ \ \ \ \ \ horizontalLayout\_3-\/>addWidget(amtTextBox);}
+\DoxyCodeLine{00474\ }
+\DoxyCodeLine{00475\ }
+\DoxyCodeLine{00476\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addWidget(groupBox\_3);}
+\DoxyCodeLine{00477\ }
+\DoxyCodeLine{00478\ \ \ \ \ \ \ \ \ transferButton\ =\ \textcolor{keyword}{new}\ QPushButton(transferPage);}
+\DoxyCodeLine{00479\ \ \ \ \ \ \ \ \ transferButton-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}transferButton"{}}));}
+\DoxyCodeLine{00480\ }
+\DoxyCodeLine{00481\ \ \ \ \ \ \ \ \ verticalLayout\_2-\/>addWidget(transferButton);}
+\DoxyCodeLine{00482\ }
+\DoxyCodeLine{00483\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(transferPage);}
+\DoxyCodeLine{00484\ \ \ \ \ \ \ \ \ budgetPage\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00485\ \ \ \ \ \ \ \ \ budgetPage-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}budgetPage"{}}));}
+\DoxyCodeLine{00486\ \ \ \ \ \ \ \ \ verticalLayout\_Budget\ =\ \textcolor{keyword}{new}\ QVBoxLayout(budgetPage);}
+\DoxyCodeLine{00487\ \ \ \ \ \ \ \ \ verticalLayout\_Budget-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}verticalLayout\_Budget"{}}));}
+\DoxyCodeLine{00488\ \ \ \ \ \ \ \ \ label1\ =\ \textcolor{keyword}{new}\ QLabel(budgetPage);}
+\DoxyCodeLine{00489\ \ \ \ \ \ \ \ \ label1-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}label1"{}}));}
+\DoxyCodeLine{00490\ \ \ \ \ \ \ \ \ label1-\/>setFont(font);}
+\DoxyCodeLine{00491\ \ \ \ \ \ \ \ \ label1-\/>setAlignment(Qt::AlignCenter);}
+\DoxyCodeLine{00492\ }
+\DoxyCodeLine{00493\ \ \ \ \ \ \ \ \ verticalLayout\_Budget-\/>addWidget(label1);}
+\DoxyCodeLine{00494\ }
+\DoxyCodeLine{00495\ \ \ \ \ \ \ \ \ groupBox\ =\ \textcolor{keyword}{new}\ QGroupBox(budgetPage);}
+\DoxyCodeLine{00496\ \ \ \ \ \ \ \ \ groupBox-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}groupBox"{}}));}
+\DoxyCodeLine{00497\ \ \ \ \ \ \ \ \ hboxLayout\ =\ \textcolor{keyword}{new}\ QHBoxLayout(groupBox);}
+\DoxyCodeLine{00498\ \ \ \ \ \ \ \ \ hboxLayout-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}hboxLayout"{}}));}
+\DoxyCodeLine{00499\ \ \ \ \ \ \ \ \ incomeInput\ =\ \textcolor{keyword}{new}\ QLineEdit(groupBox);}
+\DoxyCodeLine{00500\ \ \ \ \ \ \ \ \ incomeInput-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}incomeInput"{}}));}
+\DoxyCodeLine{00501\ }
+\DoxyCodeLine{00502\ \ \ \ \ \ \ \ \ hboxLayout-\/>addWidget(incomeInput);}
+\DoxyCodeLine{00503\ }
+\DoxyCodeLine{00504\ \ \ \ \ \ \ \ \ calculateBudget\ =\ \textcolor{keyword}{new}\ QPushButton(groupBox);}
+\DoxyCodeLine{00505\ \ \ \ \ \ \ \ \ calculateBudget-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}calculateBudget"{}}));}
+\DoxyCodeLine{00506\ }
+\DoxyCodeLine{00507\ \ \ \ \ \ \ \ \ hboxLayout-\/>addWidget(calculateBudget);}
+\DoxyCodeLine{00508\ }
+\DoxyCodeLine{00509\ }
+\DoxyCodeLine{00510\ \ \ \ \ \ \ \ \ verticalLayout\_Budget-\/>addWidget(groupBox);}
+\DoxyCodeLine{00511\ }
+\DoxyCodeLine{00512\ \ \ \ \ \ \ \ \ groupBox1\ =\ \textcolor{keyword}{new}\ QGroupBox(budgetPage);}
+\DoxyCodeLine{00513\ \ \ \ \ \ \ \ \ groupBox1-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}groupBox1"{}}));}
+\DoxyCodeLine{00514\ \ \ \ \ \ \ \ \ formLayout\ =\ \textcolor{keyword}{new}\ QFormLayout(groupBox1);}
+\DoxyCodeLine{00515\ \ \ \ \ \ \ \ \ formLayout-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}formLayout"{}}));}
+\DoxyCodeLine{00516\ \ \ \ \ \ \ \ \ label2\ =\ \textcolor{keyword}{new}\ QLabel(groupBox1);}
+\DoxyCodeLine{00517\ \ \ \ \ \ \ \ \ label2-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}label2"{}}));}
+\DoxyCodeLine{00518\ }
+\DoxyCodeLine{00519\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(0,\ QFormLayout::LabelRole,\ label2);}
+\DoxyCodeLine{00520\ }
+\DoxyCodeLine{00521\ \ \ \ \ \ \ \ \ necessitiesLabel\ =\ \textcolor{keyword}{new}\ QLabel(groupBox1);}
+\DoxyCodeLine{00522\ \ \ \ \ \ \ \ \ necessitiesLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}necessitiesLabel"{}}));}
+\DoxyCodeLine{00523\ }
+\DoxyCodeLine{00524\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(0,\ QFormLayout::FieldRole,\ necessitiesLabel);}
+\DoxyCodeLine{00525\ }
+\DoxyCodeLine{00526\ \ \ \ \ \ \ \ \ label3\ =\ \textcolor{keyword}{new}\ QLabel(groupBox1);}
+\DoxyCodeLine{00527\ \ \ \ \ \ \ \ \ label3-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}label3"{}}));}
+\DoxyCodeLine{00528\ }
+\DoxyCodeLine{00529\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(1,\ QFormLayout::LabelRole,\ label3);}
+\DoxyCodeLine{00530\ }
+\DoxyCodeLine{00531\ \ \ \ \ \ \ \ \ wantsLabel\ =\ \textcolor{keyword}{new}\ QLabel(groupBox1);}
+\DoxyCodeLine{00532\ \ \ \ \ \ \ \ \ wantsLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}wantsLabel"{}}));}
+\DoxyCodeLine{00533\ }
+\DoxyCodeLine{00534\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(1,\ QFormLayout::FieldRole,\ wantsLabel);}
+\DoxyCodeLine{00535\ }
+\DoxyCodeLine{00536\ \ \ \ \ \ \ \ \ label4\ =\ \textcolor{keyword}{new}\ QLabel(groupBox1);}
+\DoxyCodeLine{00537\ \ \ \ \ \ \ \ \ label4-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}label4"{}}));}
+\DoxyCodeLine{00538\ }
+\DoxyCodeLine{00539\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(2,\ QFormLayout::LabelRole,\ label4);}
+\DoxyCodeLine{00540\ }
+\DoxyCodeLine{00541\ \ \ \ \ \ \ \ \ savingsLabel\ =\ \textcolor{keyword}{new}\ QLabel(groupBox1);}
+\DoxyCodeLine{00542\ \ \ \ \ \ \ \ \ savingsLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}savingsLabel"{}}));}
+\DoxyCodeLine{00543\ }
+\DoxyCodeLine{00544\ \ \ \ \ \ \ \ \ formLayout-\/>setWidget(2,\ QFormLayout::FieldRole,\ savingsLabel);}
+\DoxyCodeLine{00545\ }
+\DoxyCodeLine{00546\ }
+\DoxyCodeLine{00547\ \ \ \ \ \ \ \ \ verticalLayout\_Budget-\/>addWidget(groupBox1);}
+\DoxyCodeLine{00548\ }
+\DoxyCodeLine{00549\ \ \ \ \ \ \ \ \ groupBox2\ =\ \textcolor{keyword}{new}\ QGroupBox(budgetPage);}
+\DoxyCodeLine{00550\ \ \ \ \ \ \ \ \ groupBox2-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}groupBox2"{}}));}
+\DoxyCodeLine{00551\ \ \ \ \ \ \ \ \ vboxLayout\ =\ \textcolor{keyword}{new}\ QVBoxLayout(groupBox2);}
+\DoxyCodeLine{00552\ \ \ \ \ \ \ \ \ vboxLayout-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}vboxLayout"{}}));}
+\DoxyCodeLine{00553\ \ \ \ \ \ \ \ \ customCategoriesList\ =\ \textcolor{keyword}{new}\ QListWidget(groupBox2);}
+\DoxyCodeLine{00554\ \ \ \ \ \ \ \ \ customCategoriesList-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}customCategoriesList"{}}));}
+\DoxyCodeLine{00555\ }
+\DoxyCodeLine{00556\ \ \ \ \ \ \ \ \ vboxLayout-\/>addWidget(customCategoriesList);}
+\DoxyCodeLine{00557\ }
+\DoxyCodeLine{00558\ \ \ \ \ \ \ \ \ hboxLayout1\ =\ \textcolor{keyword}{new}\ QHBoxLayout();}
+\DoxyCodeLine{00559\ \ \ \ \ \ \ \ \ hboxLayout1-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}hboxLayout1"{}}));}
+\DoxyCodeLine{00560\ \ \ \ \ \ \ \ \ customCategoryInput\ =\ \textcolor{keyword}{new}\ QLineEdit(groupBox2);}
+\DoxyCodeLine{00561\ \ \ \ \ \ \ \ \ customCategoryInput-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}customCategoryInput"{}}));}
+\DoxyCodeLine{00562\ }
+\DoxyCodeLine{00563\ \ \ \ \ \ \ \ \ hboxLayout1-\/>addWidget(customCategoryInput);}
+\DoxyCodeLine{00564\ }
+\DoxyCodeLine{00565\ \ \ \ \ \ \ \ \ customAmountInput\ =\ \textcolor{keyword}{new}\ QLineEdit(groupBox2);}
+\DoxyCodeLine{00566\ \ \ \ \ \ \ \ \ customAmountInput-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}customAmountInput"{}}));}
+\DoxyCodeLine{00567\ }
+\DoxyCodeLine{00568\ \ \ \ \ \ \ \ \ hboxLayout1-\/>addWidget(customAmountInput);}
+\DoxyCodeLine{00569\ }
+\DoxyCodeLine{00570\ \ \ \ \ \ \ \ \ addCustomCategory\ =\ \textcolor{keyword}{new}\ QPushButton(groupBox2);}
+\DoxyCodeLine{00571\ \ \ \ \ \ \ \ \ addCustomCategory-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}addCustomCategory"{}}));}
+\DoxyCodeLine{00572\ }
+\DoxyCodeLine{00573\ \ \ \ \ \ \ \ \ hboxLayout1-\/>addWidget(addCustomCategory);}
+\DoxyCodeLine{00574\ }
+\DoxyCodeLine{00575\ }
+\DoxyCodeLine{00576\ \ \ \ \ \ \ \ \ vboxLayout-\/>addLayout(hboxLayout1);}
+\DoxyCodeLine{00577\ }
+\DoxyCodeLine{00578\ }
+\DoxyCodeLine{00579\ \ \ \ \ \ \ \ \ verticalLayout\_Budget-\/>addWidget(groupBox2);}
+\DoxyCodeLine{00580\ }
+\DoxyCodeLine{00581\ \ \ \ \ \ \ \ \ saveBudget\ =\ \textcolor{keyword}{new}\ QPushButton(budgetPage);}
+\DoxyCodeLine{00582\ \ \ \ \ \ \ \ \ saveBudget-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}saveBudget"{}}));}
+\DoxyCodeLine{00583\ }
+\DoxyCodeLine{00584\ \ \ \ \ \ \ \ \ verticalLayout\_Budget-\/>addWidget(saveBudget);}
+\DoxyCodeLine{00585\ }
+\DoxyCodeLine{00586\ \ \ \ \ \ \ \ \ backToAccountButton\ =\ \textcolor{keyword}{new}\ QPushButton(budgetPage);}
+\DoxyCodeLine{00587\ \ \ \ \ \ \ \ \ backToAccountButton-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}backToAccountButton"{}}));}
+\DoxyCodeLine{00588\ }
+\DoxyCodeLine{00589\ \ \ \ \ \ \ \ \ verticalLayout\_Budget-\/>addWidget(backToAccountButton);}
+\DoxyCodeLine{00590\ }
+\DoxyCodeLine{00591\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(budgetPage);}
+\DoxyCodeLine{00592\ \ \ \ \ \ \ \ \ transactionHistoryPage\ =\ \textcolor{keyword}{new}\ QWidget();}
+\DoxyCodeLine{00593\ \ \ \ \ \ \ \ \ transactionHistoryPage-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}transactionHistoryPage"{}}));}
+\DoxyCodeLine{00594\ \ \ \ \ \ \ \ \ verticalLayout\_TransactionHistory\ =\ \textcolor{keyword}{new}\ QVBoxLayout(transactionHistoryPage);}
+\DoxyCodeLine{00595\ \ \ \ \ \ \ \ \ verticalLayout\_TransactionHistory-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}verticalLayout\_TransactionHistory"{}}));}
+\DoxyCodeLine{00596\ \ \ \ \ \ \ \ \ transactionHistoryLabel\ =\ \textcolor{keyword}{new}\ QLabel(transactionHistoryPage);}
+\DoxyCodeLine{00597\ \ \ \ \ \ \ \ \ transactionHistoryLabel-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}transactionHistoryLabel"{}}));}
+\DoxyCodeLine{00598\ \ \ \ \ \ \ \ \ transactionHistoryLabel-\/>setStyleSheet(QString::fromUtf8(\textcolor{stringliteral}{"{}font-\/size:\ 18pt;\ font-\/weight:\ bold;"{}}));}
+\DoxyCodeLine{00599\ \ \ \ \ \ \ \ \ transactionHistoryLabel-\/>setAlignment(Qt::AlignCenter);}
+\DoxyCodeLine{00600\ }
+\DoxyCodeLine{00601\ \ \ \ \ \ \ \ \ verticalLayout\_TransactionHistory-\/>addWidget(transactionHistoryLabel);}
+\DoxyCodeLine{00602\ }
+\DoxyCodeLine{00603\ \ \ \ \ \ \ \ \ transactionTable\ =\ \textcolor{keyword}{new}\ QTableWidget(transactionHistoryPage);}
+\DoxyCodeLine{00604\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (transactionTable-\/>columnCount()\ <\ 4)}
+\DoxyCodeLine{00605\ \ \ \ \ \ \ \ \ \ \ \ \ transactionTable-\/>setColumnCount(4);}
+\DoxyCodeLine{00606\ \ \ \ \ \ \ \ \ QTableWidgetItem\ *\_\_qtablewidgetitem\ =\ \textcolor{keyword}{new}\ QTableWidgetItem();}
+\DoxyCodeLine{00607\ \ \ \ \ \ \ \ \ transactionTable-\/>setHorizontalHeaderItem(0,\ \_\_qtablewidgetitem);}
+\DoxyCodeLine{00608\ \ \ \ \ \ \ \ \ QTableWidgetItem\ *\_\_qtablewidgetitem1\ =\ \textcolor{keyword}{new}\ QTableWidgetItem();}
+\DoxyCodeLine{00609\ \ \ \ \ \ \ \ \ transactionTable-\/>setHorizontalHeaderItem(1,\ \_\_qtablewidgetitem1);}
+\DoxyCodeLine{00610\ \ \ \ \ \ \ \ \ QTableWidgetItem\ *\_\_qtablewidgetitem2\ =\ \textcolor{keyword}{new}\ QTableWidgetItem();}
+\DoxyCodeLine{00611\ \ \ \ \ \ \ \ \ transactionTable-\/>setHorizontalHeaderItem(2,\ \_\_qtablewidgetitem2);}
+\DoxyCodeLine{00612\ \ \ \ \ \ \ \ \ QTableWidgetItem\ *\_\_qtablewidgetitem3\ =\ \textcolor{keyword}{new}\ QTableWidgetItem();}
+\DoxyCodeLine{00613\ \ \ \ \ \ \ \ \ transactionTable-\/>setHorizontalHeaderItem(3,\ \_\_qtablewidgetitem3);}
+\DoxyCodeLine{00614\ \ \ \ \ \ \ \ \ transactionTable-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}transactionTable"{}}));}
+\DoxyCodeLine{00615\ \ \ \ \ \ \ \ \ transactionTable-\/>setRowCount(0);}
+\DoxyCodeLine{00616\ \ \ \ \ \ \ \ \ transactionTable-\/>setColumnCount(4);}
+\DoxyCodeLine{00617\ }
+\DoxyCodeLine{00618\ \ \ \ \ \ \ \ \ verticalLayout\_TransactionHistory-\/>addWidget(transactionTable);}
+\DoxyCodeLine{00619\ }
+\DoxyCodeLine{00620\ \ \ \ \ \ \ \ \ backToAccountBtn\ =\ \textcolor{keyword}{new}\ QPushButton(transactionHistoryPage);}
+\DoxyCodeLine{00621\ \ \ \ \ \ \ \ \ backToAccountBtn-\/>setObjectName(QString::fromUtf8(\textcolor{stringliteral}{"{}backToAccountBtn"{}}));}
+\DoxyCodeLine{00622\ }
+\DoxyCodeLine{00623\ \ \ \ \ \ \ \ \ verticalLayout\_TransactionHistory-\/>addWidget(backToAccountBtn);}
+\DoxyCodeLine{00624\ }
+\DoxyCodeLine{00625\ \ \ \ \ \ \ \ \ stackedWidget-\/>addWidget(transactionHistoryPage);}
+\DoxyCodeLine{00626\ }
+\DoxyCodeLine{00627\ \ \ \ \ \ \ \ \ verticalLayout-\/>addWidget(stackedWidget);}
+\DoxyCodeLine{00628\ }
+\DoxyCodeLine{00629\ \ \ \ \ \ \ \ \ MainWindow-\/>setCentralWidget(centralwidget);}
+\DoxyCodeLine{00630\ }
+\DoxyCodeLine{00631\ \ \ \ \ \ \ \ \ retranslateUi(MainWindow);}
+\DoxyCodeLine{00632\ }
+\DoxyCodeLine{00633\ \ \ \ \ \ \ \ \ QMetaObject::connectSlotsByName(MainWindow);}
+\DoxyCodeLine{00634\ \ \ \ \ \}\ \textcolor{comment}{//\ setupUi}}
+\DoxyCodeLine{00635\ }
+\DoxyCodeLine{00636\ \ \ \ \ \textcolor{keywordtype}{void}\ retranslateUi(QMainWindow\ *MainWindow)}
+\DoxyCodeLine{00637\ \ \ \ \ \{}
+\DoxyCodeLine{00638\ \ \ \ \ \ \ \ \ MainWindow-\/>setWindowTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Banking\ App"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00639\ \ \ \ \ \ \ \ \ loginTitle-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Login\ to\ Your\ Account"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00640\ \ \ \ \ \ \ \ \ usernameInput-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Username"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00641\ \ \ \ \ \ \ \ \ passwordInput-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Password"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00642\ \ \ \ \ \ \ \ \ loginButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Login"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00643\ \ \ \ \ \ \ \ \ showRegistrationButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Register"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00644\ \ \ \ \ \ \ \ \ registerTitle-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Create\ New\ Account"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00645\ \ \ \ \ \ \ \ \ regUsernameInput-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Username"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00646\ \ \ \ \ \ \ \ \ regPasswordInput-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Password"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00647\ \ \ \ \ \ \ \ \ registerButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Register"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00648\ \ \ \ \ \ \ \ \ showLoginButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Back\ to\ Login"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00649\ \ \ \ \ \ \ \ \ label-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Account\ Overview"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00650\ \ \ \ \ \ \ \ \ transferFundsButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Transfer\ Funds"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00651\ \ \ \ \ \ \ \ \ budgetButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Budget\ Tool"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00652\ \ \ \ \ \ \ \ \ viewHistoryButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}View\ History"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00653\ \ \ \ \ \ \ \ \ checkingGroup-\/>setTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Checking\ Account\ (****1234)"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00654\ \ \ \ \ \ \ \ \ checkingBalanceText-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Balance:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00655\ \ \ \ \ \ \ \ \ checkingBalanceLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}\$500"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00656\ \ \ \ \ \ \ \ \ checkingAmountInput-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Amount"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00657\ \ \ \ \ \ \ \ \ checkingDepositBtn-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Deposit"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00658\ \ \ \ \ \ \ \ \ checkingWithdrawBtn-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Withdraw"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00659\ \ \ \ \ \ \ \ \ savingsGroup-\/>setTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Savings\ Account\ (****5678)"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00660\ \ \ \ \ \ \ \ \ savingsBalanceText-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Balance:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00661\ \ \ \ \ \ \ \ \ savingsBalanceLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}\$1500"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00662\ \ \ \ \ \ \ \ \ savingsAmountInput-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Amount"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00663\ \ \ \ \ \ \ \ \ savingsDepositBtn-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Deposit"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00664\ \ \ \ \ \ \ \ \ savingsWithdrawBtn-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Withdraw"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00665\ \ \ \ \ \ \ \ \ logoutButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Log\ Out"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00666\ \ \ \ \ \ \ \ \ transferLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Transfer\ Funds"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00667\ \ \ \ \ \ \ \ \ pushButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Account\ Info"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00668\ \ \ \ \ \ \ \ \ sourceGroup-\/>setTitle(QString());}
+\DoxyCodeLine{00669\ \ \ \ \ \ \ \ \ sourceLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Source\ Account:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00670\ \ \ \ \ \ \ \ \ sourceDrop-\/>setItemText(0,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}checking"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00671\ \ \ \ \ \ \ \ \ sourceDrop-\/>setItemText(1,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}savings"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00672\ }
+\DoxyCodeLine{00673\ \ \ \ \ \ \ \ \ sourceBalanceLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Balance:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00674\ \ \ \ \ \ \ \ \ destGroup-\/>setTitle(QString());}
+\DoxyCodeLine{00675\ \ \ \ \ \ \ \ \ destDrop-\/>setItemText(0,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}checking"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00676\ \ \ \ \ \ \ \ \ destDrop-\/>setItemText(1,\ QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}savings"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00677\ }
+\DoxyCodeLine{00678\ \ \ \ \ \ \ \ \ destLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Destination\ Account:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00679\ \ \ \ \ \ \ \ \ destBalanceLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Balance:\ "{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00680\ \ \ \ \ \ \ \ \ groupBox\_3-\/>setTitle(QString());}
+\DoxyCodeLine{00681\ \ \ \ \ \ \ \ \ amtLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Amount\ (\$):"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00682\ \ \ \ \ \ \ \ \ amtTextBox-\/>setText(QString());}
+\DoxyCodeLine{00683\ \ \ \ \ \ \ \ \ amtTextBox-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Enter\ Amount:"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00684\ \ \ \ \ \ \ \ \ transferButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Transfer"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00685\ \ \ \ \ \ \ \ \ label1-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Budget\ Calculator"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00686\ \ \ \ \ \ \ \ \ groupBox-\/>setTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Monthly\ After-\/Tax\ Income"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00687\ \ \ \ \ \ \ \ \ incomeInput-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Enter\ your\ income"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00688\ \ \ \ \ \ \ \ \ calculateBudget-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Calculate"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00689\ \ \ \ \ \ \ \ \ groupBox1-\/>setTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Your\ 50/30/20\ Numbers"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00690\ \ \ \ \ \ \ \ \ label2-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Necessities\ (50\%)"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00691\ \ \ \ \ \ \ \ \ necessitiesLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}\$0.00"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00692\ \ \ \ \ \ \ \ \ label3-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Wants\ (30\%)"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00693\ \ \ \ \ \ \ \ \ wantsLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}\$0.00"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00694\ \ \ \ \ \ \ \ \ label4-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Savings/Debt\ (20\%)"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00695\ \ \ \ \ \ \ \ \ savingsLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}\$0.00"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00696\ \ \ \ \ \ \ \ \ groupBox2-\/>setTitle(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Custom\ Budget\ Categories"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00697\ \ \ \ \ \ \ \ \ customCategoryInput-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Category\ Name"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00698\ \ \ \ \ \ \ \ \ customAmountInput-\/>setPlaceholderText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Amount"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00699\ \ \ \ \ \ \ \ \ addCustomCategory-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Add"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00700\ \ \ \ \ \ \ \ \ saveBudget-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Save\ Budget"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00701\ \ \ \ \ \ \ \ \ backToAccountButton-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Back\ to\ Account"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00702\ \ \ \ \ \ \ \ \ transactionHistoryLabel-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Transaction\ History"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00703\ \ \ \ \ \ \ \ \ QTableWidgetItem\ *\_\_\_qtablewidgetitem\ =\ transactionTable-\/>horizontalHeaderItem(0);}
+\DoxyCodeLine{00704\ \ \ \ \ \ \ \ \ \_\_\_qtablewidgetitem-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Source\ Account"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00705\ \ \ \ \ \ \ \ \ QTableWidgetItem\ *\_\_\_qtablewidgetitem1\ =\ transactionTable-\/>horizontalHeaderItem(1);}
+\DoxyCodeLine{00706\ \ \ \ \ \ \ \ \ \_\_\_qtablewidgetitem1-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Destination\ Account"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00707\ \ \ \ \ \ \ \ \ QTableWidgetItem\ *\_\_\_qtablewidgetitem2\ =\ transactionTable-\/>horizontalHeaderItem(2);}
+\DoxyCodeLine{00708\ \ \ \ \ \ \ \ \ \_\_\_qtablewidgetitem2-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Amount"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00709\ \ \ \ \ \ \ \ \ QTableWidgetItem\ *\_\_\_qtablewidgetitem3\ =\ transactionTable-\/>horizontalHeaderItem(3);}
+\DoxyCodeLine{00710\ \ \ \ \ \ \ \ \ \_\_\_qtablewidgetitem3-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Timestamp"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00711\ \ \ \ \ \ \ \ \ backToAccountBtn-\/>setText(QCoreApplication::translate(\textcolor{stringliteral}{"{}MainWindow"{}},\ \textcolor{stringliteral}{"{}Back\ to\ Account"{}},\ \textcolor{keyword}{nullptr}));}
+\DoxyCodeLine{00712\ \ \ \ \ \}\ \textcolor{comment}{//\ retranslateUi}}
+\DoxyCodeLine{00713\ }
+\DoxyCodeLine{00714\ \};}
+\DoxyCodeLine{00715\ }
+\DoxyCodeLine{00716\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00717\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_ui_1_1_main_window}{MainWindow}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_ui___main_window}{Ui\_MainWindow}}\ \{\};}
+\DoxyCodeLine{00718\ \}\ \textcolor{comment}{//\ namespace\ Ui}}
+\DoxyCodeLine{00719\ }
+\DoxyCodeLine{00720\ QT\_END\_NAMESPACE}
+\DoxyCodeLine{00721\ }
+\DoxyCodeLine{00722\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ UI\_MAINWINDOW\_H}}
+
+\end{DoxyCode}
